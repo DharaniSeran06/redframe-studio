@@ -4,11 +4,11 @@ A modern and responsive **Design Agency Landing Page** built with **Next.js 15**
 
 ## 🌐 Live Demo
 
-🔗 https://your-vercel-link.vercel.app
+🔗 https://redframe-studio-gwg1r0x2j-dharaniseran06s-projects.vercel.app/
 
 ## 💻 GitHub Repository
 
-🔗 https://github.com/yourusername/redframe-studio
+🔗 https://github.com/DharaniSeran06/redframe-studio.git
 
 ---
 
