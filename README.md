@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 RedFrame Studio
 
-## Getting Started
+A modern and responsive **Design Agency Landing Page** built with **Next.js 15**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
-First, run the development server:
+## 🌐 Live Demo
+
+🔗 https://your-vercel-link.vercel.app
+
+## 💻 GitHub Repository
+
+🔗 https://github.com/yourusername/redframe-studio
+
+---
+
+## 📸 Preview
+
+Modern landing page featuring:
+
+- Hero Section
+- Services Section
+- Portfolio Section
+- Contact Form
+- Footer
+
+---
+
+## ✨ Features
+
+- 🎨 Modern UI with Black & Red Theme
+- 📱 Fully Responsive Design
+- ⚡ Built with Next.js App Router
+- 🎭 Framer Motion Animations
+- 🖼️ Optimized Images using Next/Image
+- 📋 Contact Form with Basic Validation
+- 🔍 SEO Metadata
+- 🧩 Reusable React Components
+- 💨 Tailwind CSS Styling
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+---
+
+## 📂 Folder Structure
+
+```
+app/
+components/
+public/
+  ├── hero.png
+  └── portfolio/
+      ├── project1.jpg
+      ├── project2.jpg
+      └── project3.jpg
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/redframe-studio.git
+```
+
+Go to the project folder:
+
+```bash
+cd redframe-studio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📈 Future Improvements
 
-To learn more about Next.js, take a look at the following resources:
+- Dark Mode Toggle
+- Project Details Page
+- Working Contact Form Backend
+- Blog Section
+- More Advanced Animations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👨‍💻 Author
 
-## Deploy on Vercel
+**Dharani Seran**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+LinkedIn:
+https://www.linkedin.com/in/dharaniseran
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GitHub:
+https://github.com/DharaniSeran06
+
+---
+
+## 📄 License
+
+This project was created as part of a **Next.js Developer Internship Assessment**.
