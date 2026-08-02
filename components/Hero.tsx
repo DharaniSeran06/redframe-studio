@@ -1,61 +1,78 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import HeroBackground from "./HeroBackground";
+import HeroCards from "./HeroCards";
+import Laptop from "./Laptop";
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center overflow-hidden"
+      className="relative min-h-screen overflow-hidden"
     >
-      {/* Background Image */}
-      <Image
-        src="/hero.png"
-        alt="Hero Background"
-        fill
-        priority
-        className="object-cover"
-      />
+      {/* Background */}
+      <HeroBackground />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      {/* Floating Cards */}
+      <HeroCards />
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center px-6 text-center text-white">
-        <motion.h1
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-6 max-w-5xl text-5xl font-extrabold leading-tight md:text-7xl"
-        >
-          Crafting Digital Experiences
-        </motion.h1>
+      {/* Main Content */}
+      <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl items-center gap-12 px-8 lg:px-12">
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className="mb-8 max-w-2xl text-lg text-gray-300 md:text-xl"
-        >
-          We design modern websites, intuitive user experiences, and powerful
-          digital products that help brands grow.
-        </motion.p>
-
+        {/* LEFT SIDE */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="flex flex-wrap justify-center gap-4"
+          initial={{ opacity: 0, x: -80 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-1 justify-center"
         >
-          <button className="rounded-lg bg-red-600 px-8 py-4 font-semibold text-white shadow-xl shadow-red-600/50 transition duration-300 hover:scale-105 hover:bg-red-700">
-            View Work
-          </button>
-
-          <button className="rounded-lg border border-red-600 px-8 py-4 font-semibold text-red-500 transition duration-300 hover:bg-red-600 hover:text-white">
-            Get Started
-          </button>
+          <Laptop />
         </motion.div>
+
+        {/* RIGHT SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: 60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.15 }}
+          className="flex flex-1 flex-col items-start text-left text-white"
+        >
+          {/* Subtitle */}
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.45em] text-red-500">
+            WE BUILD DIGITAL SOLUTIONS
+          </p>
+
+          {/* Heading */}
+          <h1 className="max-w-md text-5xl font-extrabold leading-[1.05] lg:text-5xl">
+            Crafting Digital
+            <br />
+            <span className="text-red-500">
+              Experiences
+            </span>
+          </h1>
+
+          {/* Description */}
+          <p className="mt-7 max-w-md text-base leading-8 text-gray-300 lg:text-lg">
+            We design and build modern websites,
+            digital experiences, branding solutions
+            and powerful products that help brands
+            grow and stand out.
+          </p>
+
+          {/* Buttons */}
+          <div className="mt-10 flex items-center gap-4">
+
+            <button className="rounded-full bg-red-600 px-6 py-3 text-sm font-semibold text-white shadow-xl shadow-red-600/30 transition-all duration-300 hover:scale-105 hover:bg-red-700">
+              View Our Work →
+            </button>
+
+            <button className="rounded-full border border-red-500 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-red-600 hover:border-red-600">
+              Contact Us
+            </button>
+
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );
